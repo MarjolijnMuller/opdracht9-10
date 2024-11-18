@@ -121,7 +121,7 @@ export let inventory = [
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
         sourceImg: 'https://media.s-bol.com/B9n73k76VG2N/vQYEKNn/1200x734.jpg',
-        options:     [
+        options: [
             {
                 name: "wifi",
                 applicable: true,
@@ -157,7 +157,7 @@ export let inventory = [
         screenQuality: 'Ultra HD/4K',
         sourceImg: 'https://media.s-bol.com/ROVXLp4q9joq/1200x751.jpg',
         smartTv: true,
-        options:     [
+        options: [
             {
                 name: "wifi",
                 applicable: true,
@@ -328,4 +328,61 @@ export let inventory = [
     },
 ];
 
+/*//OPDRACHT 1
+console.log();
+console.log("opdracht 1a");
 
+const allTvTypes = inventory.filter((tv) => tv.type);
+console.log(allTvTypes);
+
+console.log();
+console.log("opdracht 1b");
+
+const infoSoldOut = inventory.filter((tv) => {
+    if (tv.originalStock - tv.sold === 0) {
+        return tv;
+    }
+});
+console.log(infoSoldOut);
+
+console.log();
+console.log("opdracht 1c");
+
+const findTV = inventory.find((tv) => tv.type === 'NH3216SMART');
+console.log(findTV);
+
+console.log();
+console.log("opdracht 1d");
+
+const ableForSport = inventory.filter((tv) => {
+        if (tv.refreshRate >= 100) {
+            return true;
+        }
+    }
+);
+
+ableForSport.forEach((tv) => {
+    console.log({name: tv.name, suitable: true});
+});
+
+console.log();
+console.log("opdracht 1e");
+
+const bigSizeTv = inventory.filter((tv) => {
+    for (let i = 0; i < tv.availableSizes.length; i++) {
+        if (tv.availableSizes[i] >= 65) {
+            return tv;
+        }
+    }
+});
+
+console.log(bigSizeTv);
+
+console.log();
+console.log("opdracht 1f");
+
+const tvsWithAmbilight = inventory.filter(tv => {
+    return tv.options.some(option => option.name === 'ambiLight' && option.applicable);
+});
+
+console.log(tvsWithAmbilight);*/
