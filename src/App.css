@@ -52,7 +52,7 @@ h1, h2{
     padding-bottom: 20px;
 }
 
-.bestSellingTV {
+.tv {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,14 +67,17 @@ h1, h2{
     flex-grow: 1;
 }
 
-.imgBestSellingTV {
+article + article {
+    margin-top: 1rem;
+}
+.imgTV {
     height: 10rem;
     flex-basis: 10rem;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
-.productInformationBestSellingTV {
+.productInformation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +92,7 @@ h1, h2{
     flex-wrap: wrap;
 }
 
-.optionsBestSellingTV {
+.options {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,7 +100,7 @@ h1, h2{
 
 }
 
-.tvOptionTV {
+.option {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -111,6 +114,15 @@ h1, h2{
     height: 10px;
 }
 
+.buttonWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
 button {
     padding: 10px;
     background-color: darkcyan;
@@ -118,6 +130,8 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 1px cyan;
+    margin-top: 1rem;
+    width: calc(100%/5);
 }
 
 button:hover {
@@ -127,5 +141,5 @@ button:hover {
 }
 
 button + button {
-    margin: 10px;
+    margin-left: 10px;
 }
